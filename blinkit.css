@@ -1,0 +1,209 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* header  */
+
+header{
+    border-bottom: 1px solid rgb(232, 232, 232);
+    background-color: white;
+    z-index: 1;
+} 
+
+/* nav  */
+nav{
+    grid-template-columns: 1fr 6fr;
+}
+
+nav input{
+    width: 45% !important;
+    background-color: rgb(243, 243, 243) !important;
+}
+
+nav input::placeholder{
+    color: #ababab !important;
+}
+
+nav>div:nth-child(2) button{
+    background-color: #0C831F;
+    font-weight: bold;
+    color: white;
+}
+
+#blinkit-icon>h1{
+    display: inline-block;
+    border-right: 1px solid rgb(232, 232, 232);
+}
+
+#blinkit-icon>h1{
+    font-weight: 900!important;
+}
+
+#blinkit-icon>h1>span:nth-child(1){
+    color: #F8CB46;
+}
+#blinkit-icon>h1>span:nth-child(2){
+    color: #54B226;
+}
+
+/* hero section  */
+
+main{
+    width: 85vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+#hero-section{
+    width: 85vw;
+    overflow: hidden;
+}
+
+#hero-section>div::-webkit-scrollbar,#dairy-bread-sec>div:nth-child(2)::-webkit-scrollbar,#paper-tobacco-sec>div:nth-child(2)::-webkit-scrollbar,#hookah-sec>div:nth-child(2)::-webkit-scrollbar{
+    width: 0px;
+}
+
+#hero-section>div{
+    width: 85vw;   
+    gap: 1rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+#hero-section>div img{
+    width: 25% !important;
+}
+
+/* product  */
+
+#product-sec>div{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#product-sec>div img{
+    max-width: 100%;
+    transition: all 0.2s linear;
+}
+
+#product-sec>div img:hover{
+    transform: scale(1.05);
+}
+
+/* dairy bread section  */
+
+#dairy-bread-sec>div:nth-child(1)>h5,#paper-tobacco-sec>div:nth-child(1)>h5,#hookah-sec>div:nth-child(1)>h5{
+    color: #0C831F;
+}
+#dairy-bread-sec>div:nth-child(2),#paper-tobacco-sec>div:nth-child(2),#hookah-sec>div:nth-child(2){
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+}
+#dairy-bread-sec>div:nth-child(2)>div,#paper-tobacco-sec>div:nth-child(2)>div,#hookah-sec>div:nth-child(2)>div{
+    flex: 0 0 auto;
+}
+#dairy-bread-sec>div:nth-child(2) img,#paper-tobacco-sec>div:nth-child(2) img,#hookah-sec>div:nth-child(2) img{
+    margin: auto;
+    width: 10rem;
+}
+
+#dairy-bread-card>div:nth-child(2)>div>p:nth-child(1),#paper-tobacco-card>div:nth-child(2)>div>p:nth-child(1),#hookah-card>div:nth-child(2)>div>p:nth-child(1){
+    color: #666666;
+}
+
+#dairy-bread-card>div:nth-child(2)>div>div:nth-child(2)>div>p:nth-child(2),#paper-tobacco-card>div:nth-child(2)>div>div:nth-child(2)>div>p:nth-child(2),#hookah-card>div:nth-child(3)>div>div:nth-child(2)>div>p:nth-child(2){
+    text-decoration: line-through;
+    text-decoration-color: rgb(130, 130, 130);
+    color: rgb(130, 130, 130);
+}
+
+.discount-ticker{
+        position: absolute;
+        top: -1px;
+        box-sizing: border-box;
+        left: 0.8rem;
+}
+.discount-ticker>div{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 75%;
+    left: 50%;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+#delivery-time>span{
+    font-size: 0.6rem;
+    font-weight: bold;
+    background-color: rgb(238, 238, 238);;
+    border-radius: 5px;
+}
+
+/* footer  */
+
+footer{
+    margin-top: 5rem;
+}
+
+/* useful links and categories  */
+
+#links-categories{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 4rem;
+    grid-gap: 1rem;
+}
+#categories>div:nth-child(1)>p{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #54B226;
+    cursor: pointer;
+}
+
+td{
+    padding: 0px !important;
+    padding-bottom: 0.5rem !important;
+    color: #666 !important;
+}
+
+/* social  */
+
+#social{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    color: #666;
+}
+#social>div:nth-child(1)>p{
+    font-size: 0.8rem;
+}
+#social>div:nth-child(2)>img{
+    width: 6rem;
+}
+
+#social-media-icons>i{
+    text-align: center;
+    width: 3rem;
+    padding: 0.8rem;
+    background-color: rgb(31, 31, 31);
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50%;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+#social-media-icons>i:hover{
+    transform: scale(1.1);
+}
+
+#last-line{
+    color: rgb(102, 102, 102);
+    line-height: 1.1rem;
+}
+
+.card-body{
+    cursor: pointer;
+}
